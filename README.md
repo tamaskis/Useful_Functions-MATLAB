@@ -8,6 +8,7 @@ Collection of miscellaneous, useful functions for MATLAB.
    - `circle`: Returns the coordinates for plotting a circle.
    - `delete_data_points`: Deletes data points based on a specified condition.
    - `interprgb`: Interpolate a new color between two colors (in RGB color space).
+   - `interpshape:` Increases the number of points defining a shape by placing n uniformly spaced points along each line segment connecting existing points.
    - `interval_search`: Finds the interval containing a query point.
    - `order_of_magnitude`: Determines the order(s) of magnitude of a (set of) number(s) for a specific base.
    - `rmse`: Calculates the root-mean-square error between a set of values and a set of estimates of those values.
