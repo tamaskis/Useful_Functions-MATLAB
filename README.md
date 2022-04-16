@@ -12,3 +12,4 @@ Collection of miscellaneous, useful functions for MATLAB.
    - `rmse`: Calculates the root-mean-square error between a set of values and a set of estimates of those values.
    - `same_denominator`: Scales a set of fractions so they each have the same denominator.
    - `scientific_notation_string`: Returns a string of a number written using scientific notation.
+   - `shade_tint_rgb`: Shade and tint RGB colors.
