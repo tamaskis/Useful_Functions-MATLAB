@@ -15,3 +15,4 @@ Collection of miscellaneous, useful functions for MATLAB.
    - `same_denominator`: Scales a set of fractions so they each have the same denominator.
    - `scientific_notation_string`: Returns a string of a number written using scientific notation.
    - `shade_tint_rgb`: Shade and tint RGB colors.
+   - `stanford_S`: Returns coordinates for drawing the Stanford S with (approximately) the specified number of points
