@@ -35,6 +35,16 @@
 % NOTE:
 % -----
 %   --> N = original number of points
+%   --> Use interpshape if:
+%           • you want to add the same number of points along each line 
+%             segment connecting existing points
+%           • you want the set of new coordinates defining the shape to 
+%             contain the original set of coordinates
+%   --> Use interparc if:
+%           • you want the shape to be defined using a specific number of 
+%             points spaced evenly around the perimeter
+%           • you want to use a different type of interpolation (such as 
+%             spline interpolation)
 %   
 %==========================================================================
 function [x_new,y_new] = interpshape(x,y,n)
