@@ -16,6 +16,7 @@ Collection of useful functions for MATLAB.
 
 ## Basic Data Manipulation
    - `delete_data_points`: Deletes data points based on a specified condition.
+   - `reduce_data_points`: Reduces the number of data points in a data set to a specified number.
    - `scale_data`: Linearly scales data to start and end between specified points.
    - `space_data_equally`: Interpolates unequally spaced data to make it equally spaced in the independent variable.
 
