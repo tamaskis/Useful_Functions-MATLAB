@@ -16,4 +16,5 @@ Collection of miscellaneous, useful functions for MATLAB.
    - `scale_data`: Linearly scales data to start and end between specified points.
    - `scientific_notation_string`: Returns a string of a number written using scientific notation.
    - `shade_tint_rgb`: Shade and tint RGB colors.
+   - `space_data_equally`: Interpolates unequally spaced data to make it equally spaced in the independent variable.
    - `stanford_S`: Returns coordinates for drawing the Stanford S with (approximately) the specified number of points
