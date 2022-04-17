@@ -5,6 +5,7 @@ Collection of miscellaneous, useful functions for MATLAB.
 
 ## Functions
 
+   - `ceiln`: Round up (toward positive infinity) to n digits.
    - `circle`: Returns the coordinates for plotting a circle.
    - `delete_data_points`: Deletes data points based on a specified condition.
    - `interprgb`: Interpolate a new color between two colors (in RGB color space).
