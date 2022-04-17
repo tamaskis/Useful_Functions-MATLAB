@@ -14,6 +14,10 @@ Collection of useful functions for MATLAB.
    - `ceiln`: Round up (toward positive infinity) to n digits.
    - `floorn`: Round down (toward negative infinity) to n digits.
 
+## Integration of Data
+   - `cumulative_integral`: Cumulative integration of data (i.e. arrays) over the domain of the data.
+   - `definite_integral`: Definite integration of data (i.e. arrays) over the domain of the data.
+
 ## Basic Data Manipulation
    - `delete_data_points`: Deletes data points based on a specified condition.
    - `reduce_data_points`: Reduces the number of data points in a data set to a specified number.
