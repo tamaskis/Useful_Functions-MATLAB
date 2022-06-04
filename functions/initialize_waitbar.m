@@ -1,6 +1,6 @@
 %==========================================================================
 %
-% initialize_waitbar  Initializes the waitbar.
+% initialize_waitbar  Initializes a waitbar.
 %
 %   [wb,prop] = initialize_waitbar(msg)
 %

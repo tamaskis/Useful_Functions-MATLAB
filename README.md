@@ -24,6 +24,10 @@ Collection of useful functions for MATLAB.
    - `scale_data`: Linearly scales data to start and end between specified points.
    - `space_data_equally`: Interpolates unequally spaced data to make it equally spaced in the independent variable.
 
+## Waitbars
+   - `[wb,prop] = initialize_waitbar(msg)`: Initializes a waitbar.
+   - `[wb,prop] = prop = update_waitbar(k,N,wb,prop)`: Updates a waitbar.
+
 ## Miscellaneous
    - `interval_search`: Finds the interval containing a query point.
    - `order_of_magnitude`: Determines the order(s) of magnitude of a (set of) number(s) for a specific base.

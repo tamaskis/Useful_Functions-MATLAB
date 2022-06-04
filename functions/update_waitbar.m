@@ -1,8 +1,8 @@
 %==========================================================================
 %
-% update_waitbar  Updates the waitbar.
+% update_waitbar  Updates a waitbar.
 %
-%   prop = update_waitbar(i,N,wb,prop)
+%   prop = update_waitbar(k,N,wb,prop)
 %
 % Copyright © 2022 Tamas Kis
 % Last Update: 2022-06-04
@@ -15,7 +15,7 @@
 % INPUT:
 % ------
 %   k       - (1×1 double) current sample number (i.e. iteration)
-%  	N       - (1×1 double) total number of samples (i.e. iterations)
+%   N       - (1×1 double) total number of samples (i.e. iterations)
 %   wb      - (1×1 Figure) waitbar
 %   prop    - (1×1 double) cutoff proportion to trigger waitbar update
 %
