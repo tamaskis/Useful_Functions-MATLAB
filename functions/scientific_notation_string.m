@@ -7,7 +7,7 @@
 %   str = scientific_notation_string(x,n)
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -17,7 +17,7 @@
 % INPUT:
 % ------
 %   x       - (1×1 double) number
-%   n       - (1×1 double) (OPTIONAL) number of digits after decimal point 
+%   n       - (OPTIONAL) (1×1 double) number of digits after decimal point 
 %             (i.e. precision)
 %
 % -------
@@ -29,7 +29,7 @@
 %   
 %==========================================================================
 function str = scientific_notation_string(x,n)
-
+    
     % defaults "n" to 4
     if (nargin < 2), n = 4; end
     
@@ -38,11 +38,11 @@ function str = scientific_notation_string(x,n)
     
     % split the string where "e" is
     string_parts = strsplit(string,'e');
-
+    
     % isolates the coefficient and exponent
     coefficient = str2double(string_parts(1));
     exponent = str2double(string_parts(2));
-
+    
     % return the string (formatted for use with LaTeX interpreter)
     str = sprintf("%."+n+"f",coefficient)+"\times10^{"+exponent+"}";
     

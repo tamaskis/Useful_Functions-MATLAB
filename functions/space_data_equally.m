@@ -8,7 +8,7 @@
 % See also interp1, interparc, interpshape.
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -20,7 +20,7 @@
 %   x       - (1×m0 or m0×1 double) independent variable data
 %   y       - (1×m0 or m0×1 double) dependent variable data
 %   dx      - (1×1 double) desired uniform spacing
-%   method  - (char) (OPTIONAL) interpolation method ('linear', 'nearest', 
+%   method  - (OPTIONAL) (char) interpolation method ('linear', 'nearest', 
 %             'next', 'previous', 'pchip','cubic','v5cubic','makima',
 %             or 'spline'; see interp1 documentation for explanation),
 %             defaults to linear interpolation if not specified
@@ -48,7 +48,7 @@
 %
 %==========================================================================
 function [x_new,y_new] = space_data_equally(x,y,dx,method)
-
+    
     % defaults "method" to 'linear' if not specified
     if (nargin < 4) || isempty(method)
         method = 'linear';

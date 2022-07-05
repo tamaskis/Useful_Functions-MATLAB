@@ -8,7 +8,7 @@
 % See also cumtrapz.
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -32,7 +32,7 @@
 % -----
 % NOTE:
 % -----
-%   --> N = number of data points (i.e. length of "y" and "x")
+%   --> N = number of subintervals (1 less than the number of data points)
 %
 %==========================================================================
 function CI = cumulative_integral(x,y)
@@ -42,7 +42,7 @@ function CI = cumulative_integral(x,y)
     
     % preallocates vector to store cumulative integral
     CI = zeros(size(x));
-
+    
     % evaluates cumulative integral using the trapezoidal rule
     for i = 1:N
         CI(i+1) = CI(i)+(y(i+1)+y(i))*((x(i+1)-x(i)))/2;

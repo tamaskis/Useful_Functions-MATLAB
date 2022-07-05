@@ -8,7 +8,7 @@
 % See also interprgb.
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -31,7 +31,7 @@
 %
 %==========================================================================
 function c_new = shade_tint_rgb(c,p,method)
-
+    
     % defines color (white for tint, black for shade) to linearly 
     % interpolate between
     if strcmpi(method,'shade')

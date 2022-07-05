@@ -8,7 +8,7 @@
 % See also trapz.
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -32,7 +32,7 @@
 % -----
 % NOTE:
 % -----
-%   --> N = number of data points (i.e. length of "y" and "x")
+%   --> N = number of subintervals (1 less than the number of data points)
 %
 %==========================================================================
 function I = definite_integral(x,y)
@@ -42,7 +42,7 @@ function I = definite_integral(x,y)
     
     % initializes definite integral
     I = 0;
-
+    
     % evaluates definite integral using the trapezoidal rule
     for i = 1:N
         I = I+(y(i+1)+y(i))*((x(i+1)-x(i)))/2;

@@ -6,7 +6,7 @@
 %   N = order_of_magnitude(num,base)
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -24,7 +24,7 @@
 % -------
 % OUTPUT:
 % -------
-%   N       - (double array of same size as num) order of magnitude of 
+%   N       - (double array of same size as "num") order of magnitude of 
 %             "num"
 %
 % -----
@@ -36,7 +36,7 @@
 %
 %==========================================================================
 function N = order_of_magnitude(num,base)
-
+    
     % defaults to base 10 if "base" not specified
     if nargin < 2 || isempty(base)
         base = 10;

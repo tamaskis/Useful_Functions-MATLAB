@@ -8,7 +8,7 @@
 % See also find.
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -51,12 +51,12 @@
 %
 %--------------------------------------------------------------------------
 function [left,right] = interval_search(x,xq,warnings)
-
+    
     % defaults "warnings" to true if not input
     if (nargin == 2) || isempty(warnings)
         warnings = true;
     end
-
+    
     % "xq" below "x"
     if xq < x(1)
         left = 1;
@@ -67,7 +67,7 @@ function [left,right] = interval_search(x,xq,warnings)
         end
         return;
     end
-
+    
      % "xq" above "x"
     if xq > x(end)
         left = length(x)-1;
@@ -105,5 +105,5 @@ function [left,right] = interval_search(x,xq,warnings)
     if x(left) ~= xq
         left = left-1;
     end
-
+    
 end

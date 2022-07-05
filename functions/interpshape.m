@@ -9,7 +9,7 @@
 % See also interparc.
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -95,5 +95,5 @@ function [x_new,y_new] = interpshape(x,y,n)
     end
     x_new(end) = x(end);
     y_new(end) = y(end);
-
+    
 end

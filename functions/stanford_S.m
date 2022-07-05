@@ -9,7 +9,7 @@
 %   [x,y,xi,yi,xo,yo] = stanford_S(n)
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -18,7 +18,7 @@
 % ------
 % INPUT:
 % ------
-%   n       - (1×1 double) (OPTIONAL) number of points to use
+%   n       - (OPTIONAL) (1×1 double) number of points to use
 %
 % -------
 % OUTPUT:
@@ -34,15 +34,16 @@
 % NOTE:
 % -----
 %   --> T+1 = length of time vector
+%   --> This function requires the "interpshape" function.
 %
 %==========================================================================
 function [x,y,xi,yi,xo,yo] = stanford_S(n)
-
+    
     % defaults n to 48 if not input
     if nargin == 0
         n = 48;
     end
-
+    
     % coordinates of upper half
     x_upper = [1.91;1.17;-0.42;-0.42;0.42;0.42;1.91;1.91;1.07;-1.07;...
         -1.91;-1.91];
@@ -69,11 +70,11 @@ function [x,y,xi,yi,xo,yo] = stanford_S(n)
     % coordinates for "inner" line
     xi = xo+dx;
     yi = yo+dy;
-
+    
     % number of points to add between each existing point (48 = original
     % number of points, 2*22 = 44 = original number of edges)
     l = round((n-48)/44);
-
+    
     % increases number of points through interpolation
     [xo,yo] = interpshape(xo,yo,l);
     [xi,yi] = interpshape(xi,yi,l);

@@ -6,7 +6,7 @@
 %   [x1_new,...,xn_new] = reduce_data_points(x1,...,xn,N)
 %
 % Copyright © 2022 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
