@@ -30,6 +30,7 @@ Collection of useful functions for MATLAB.
 
 ## Miscellaneous
    - `interval_search`: Finds the interval containing a query point.
+   - `load_numeric_data`: Loads numeric data from a `.mat` file.
    - `order_of_magnitude`: Determines the order(s) of magnitude of a (set of) number(s) for a specific base.
    - `rmse`: Calculates the root-mean-square error between a set of values and a set of estimates of those values.
    - `same_denominator`: Scales a set of fractions so they each have the same denominator.
