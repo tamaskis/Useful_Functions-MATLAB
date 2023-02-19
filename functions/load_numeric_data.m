@@ -28,7 +28,7 @@
 function data = load_numeric_data(path)
     
     % loads the data as a struct
-    data_struct = struct2array(load(path));
+    data_struct = load(path);
     
     % converts structure to cell array
     data_cell = struct2cell(data_struct);
