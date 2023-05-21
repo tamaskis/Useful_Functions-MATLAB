@@ -28,6 +28,11 @@ Collection of useful functions for MATLAB.
    - `[wb,prop] = initialize_waitbar(msg)`: Initializes a waitbar.
    - `[wb,prop] = prop = update_waitbar(k,N,wb,prop)`: Updates a waitbar.
 
+## Folder Management
+   - `create_folders(paths)`: Creates a set of folders.
+   - `empty_folders(paths)`: Deletes all contents from a set of folders.
+   - `files = list_folder_contents(path,extensions)`: Lists the contents of a folder. A list of file extensions can be specified to only list specific file types.
+
 ## Miscellaneous
    - `load_numeric_data`: Loads numeric data from a `.mat` file.
    - `order_of_magnitude`: Determines the order(s) of magnitude of a (set of) number(s) for a specific base.
