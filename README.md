@@ -2,9 +2,9 @@
 
 Collection of useful functions for MATLAB.
 
-
 ## Visualization
    - `circle`: Returns the coordinates for plotting a circle.
+   - `imresizew`: Resizes an image to a specified width (in pixels).
    - `interprgb`: Interpolate a new color between two colors (in RGB color space).
    - `interpshape:` Increases the number of points defining a shape by placing n uniformly spaced points along each line segment connecting existing points.
    - `shade_tint_rgb`: Shade and tint RGB colors.
